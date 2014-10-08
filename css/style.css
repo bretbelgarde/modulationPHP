@@ -1,0 +1,20 @@
+body.pure-skin-mine {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+#menu {
+    background: #e9ecf1;
+}
+
+#mod-details {
+    padding: 1em;
+}
+
+.pure-skin-mine .pure-menu.pure-menu-vertical,
+.pure-skin-mine .pure-menu.pure-menu-vertical .pure-menu-heading {
+    border: none;
+}
+.mod-list {
+    overflow: scroll;
+    height: 100vh;
+}
