@@ -2,3 +2,4 @@ bower_components
 data
 
 *.sublime-*
+config.php

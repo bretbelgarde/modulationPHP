@@ -10,11 +10,30 @@ body.pure-skin-mine {
     padding: 1em;
 }
 
+#notifications p{
+    text-align: center;
+    width:80%;
+    padding: .5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+.warning {background: #F67E8A; border: 2px solid #ED071E; color:#7B0310;}
+.success {background: #C1EB99; border: 2px solid #51A400; color:#66CD00;}
 .pure-skin-mine .pure-menu.pure-menu-vertical,
 .pure-skin-mine .pure-menu.pure-menu-vertical .pure-menu-heading {
     border: none;
 }
-.mod-list {
+#mod-list {
     overflow: scroll;
-    height: 100vh;
+    height: 96vh;
 }
+
+#mod-list li {margin-bottom:.25em}
+
+li.new{background-color:#DAA520;}
+.description{
+    height: 100px;
+}
+
+.clearfix{clear:both;}
