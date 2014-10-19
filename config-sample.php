@@ -4,10 +4,10 @@
  **/
 
 // Path to mods folder
-define('MODPATH', "/home/bret/games/minecraft/ATLauncher/Instances/SouthCraftv10x/mods");
+define('MODPATH', "");
 
 // Path to config folder (not used at the moment)
-define('CONFIGPATH', "/home/bret/games/minecraft/ATLauncher/Instances/SouthCraftv10x/config");
+define('CONFIGPATH', "");
 
 // Location of your mods on the ATLauncher admin site
-define('SERVERPATH', "packs/SouthCraft/files/sc-1.1.1-mods/");
+define('SERVERPATH', "");
