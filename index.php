@@ -26,7 +26,6 @@
         </div>
       </div>
     </div>
-
     <script id="modinfo-template" type="x-handlebars-template">
       <form id="mod-data" name="mod-data" class="pure-form pure-form-stacked">
         <fieldset>
@@ -43,6 +42,9 @@
           
           <label for="version">Version:</label>
           <input type="text" id="version" name="version" placeholder="Version Number" {{#if version.length}}value="{{version}}"{{/if}} class="pure-input-1">
+
+          <label for="packurl">Pack URL:</label>
+          <input type="text" id="packurl" name="packurl" placeholder="Pack URL" {{#if packurl.length}}value="{{packurl}}"{{/if}} class="pure-input-1">
 
           <label for="type">Mod Type:</label>
           <input type="text" id="type" name="type" placeholder="Mod Type" {{#if type.length}}value="{{type}}"{{/if}} class="pure-input-1">
@@ -65,6 +67,13 @@
           <button type="button" id="save" class="pure-button pure-button-primary pull-right">Save</button>
         </fieldset>
       </form>
+      <hr>
+      <div id="xml-block">
+        <div class="xml-container-label">XML</div>
+        <div class="xml-container">
+        <code id="xml-data">&lt;mod name="{{name}}" version="{{version}}" url="{{url}}" file="{{filename}}" md5="{{md5}}" download="{{download}}" type="{{type}}" website="{{website}}" donation="{{donation}}" authors="{{authors}}" description="{{description}}" /&gt;</code>
+        </div>
+      <div>
     </script>
 
     <script id="mod-list-template" type="x-handlebars-template">

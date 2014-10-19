@@ -91,30 +91,30 @@ if (isNewMod($md5Hash)) {
 
 	$flattened['filename'] = $fileName;
 	$flattened['md5'] = $md5Hash;
+	$flattened['packurl'] = SERVERPATH;
 
 } else {
 	if ($mod = getMod($md5Hash)) {
 		$flattened = array(
-            'filename'    => $mod->filename,
-            'md5'         => $mod->md5,
-            'name'        => $mod->name,
-            'modid'       => $mod->modid,
-            'version'     => $mod->version,
-            'type'        => $mod->type,
-            'download'    => $mod->download,
-            'website'     => $mod->website,
-            'authors'     => $mod->authors,
-            'donation'    => $mod->donation,
-            'description' => $mod->description
+            'filename'    => htmlentities($mod->filename),
+            'md5'         => htmlentities($mod->md5),
+            'name'        => htmlentities($mod->name),
+            'modid'       => htmlentities($mod->modid),
+            'version'     => htmlentities($mod->version),
+            'packurl'     => htmlentities($mod->packurl),
+            'type'        => htmlentities($mod->type),
+            'download'    => htmlentities($mod->download),
+            'website'     => htmlentities($mod->website),
+            'authors'     => htmlentities($mod->authors),
+            'donation'    => htmlentities($mod->donation),
+            'description' => htmlentities($mod->description)
         );
 
 		$response['success'] = true;
 
 	} else {
-
 		$flattened['error'] = "You should not be here! If you get this response something weird has happend, like a nonexistant entry in the database!";
 		$response['success'] = false;
-
 	}
 }
 
